@@ -1,51 +1,89 @@
-/* Reset */
-*{
+/* Configuração geral */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-
-/* Header */
-header{
+    font-family: Arial, sans-serif;
+    background-color: #F7F2EF; /* Cor de fundo clara */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: 7vh;
-    background-color: #474342;
+    height: 100vh;
+    text-align: center;
 }
 
-
-.img img{
-    width: 7.5vw;
-    height: 5.5vh;
+main {
+    background-color: #474342; /* Fundo escuro para o conteúdo principal */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    color: #F7F2EF; /* Texto em cor clara para contraste */
 }
 
-.menu{
-    display: flex;
-    justify-content: space-between;
-    width: 30vw;
+h1 {
+    color: #EC1F26; /* Vermelho destacado para o título principal */
+    font-size: 2em;
+    margin: 0;
 }
 
-.menu a{
-    text-decoration: none;
+h2 {
     color: #F7F2EF;
-    text-transform: capitalize;
-    font-weight: bold;
+    font-size: 1.5em;
+    margin: 10px 0;
 }
 
-.menu a:hover{
-    color: #EC1F26;
-    text-decoration: underline;
+img {
+    width: 100%;
+    max-width: 200px; /* Garante que a imagem seja responsiva */
+    height: auto;
+    margin: 20px 0;
+    /* border: 3px solid #EC1F26; Destaque na imagem */
+    border-radius: 5px;
 }
 
-.button_fale_conosco button{
+p {
     color: #F7F2EF;
-    width: 7.5vw;
-    height: 5.5vh;
-    background-color: #EC1F26;
-    text-transform: capitalize;
-    font-weight: bold;
-    border: none;
-    border-radius: 10%;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+/* Fundo com tema de engenharia */
+body::before {
+    content: \"\";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/images/logo.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    p {
+        font-size: 0.8em;
+    }
 }
