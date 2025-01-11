@@ -78,24 +78,219 @@ header{
 }
 
 .container_banner img {
-    width: 8vw; /* Ajuste o tamanho das imagens conforme necessário */
-    margin: 0 25px; /* Espaçamento entre as imagens */
+    width: 8vw;
+    margin: 0 25px;
 }
 
 /* Quem somos */
 .container_quemsomos{
     margin-top: 10%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    background-color: #EC1F26;
-}
-
-.img_ceo img{
-    width: 10vw;
-    height: 10vh;
+    /* background-color: #EC1F26; */
 }
 
 .descricao_quemsomos{
     /* margin-left: 10%;    */
+    height: 50vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* background-color: yellowgreen; */
+}
+
+.descricao_quemsomos h2{
+    color: #EC1F26;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+/* Nossa historia */
+.content {
+    padding: 20px 0;
+}
+.content_left {
+    padding: 20px 0;
+}
+
+.content_right {
+    padding: 20px 0;
+}
+
+.content h1 {
+    text-align: center;
+    color: #EC1F26;
+    font-size: 50px;
+}
+.content p {
+    text-align: center;
+}
+
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.timeline ul li {
+    margin-bottom: 50px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.point_left {
+    min-width: 20px;
+    height: 20px;
+    background-color: #474342;
+    border-radius: 100%;
+    z-index: 2;
+    border: 3px #474342 solid;
+    position: relative;
+    right: 9px;
+}
+.point_right {
+    min-width: 20px;
+    height: 20px;
+    background-color: #474342;
+    border-radius: 100%;
+    z-index: 2;
+    border: 3px #474342 solid;
+    position: relative;
+    left: 11px;
+}
+
+@media (max-width: 800px) {
+    .point {
+        min-width: 15px;
+        height: 15px;
+    }
+
+    html, body {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    html, body {
+        font-size: 14px;
+    }
+    
+    .point {
+        min-width: 12px;
+        height: 12px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    html, body {
+        font-size: 10px;
+    }
+
+    p {
+        padding: 10px !important;
+    }
+}
+
+.timeline ul li .content_left {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.timeline ul li .content_right {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.timeline ul li:nth-child(odd) .content_left {
+    padding-left: 0;
+}
+.timeline ul li:nth-child(odd) .content_right {
+    padding-left: 0;
+}
+
+.timeline ul li:nth-child(odd) .date {
+    padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .content_left {
+    padding-right: 0;
+}
+.timeline ul li:nth-child(even) .content_right {
+    padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .date {
+    padding-left: 0;
+}
+
+.timeline ul li .date {
+    width: 50%;
+    padding: 0 20px;
+    font-weight: normal;
+}
+
+.timeline ul li .date h4 {
+    width: 100px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.timeline ul li .content_left h3 {
+    padding: 10px 20px;
+    margin-bottom: 0;
+    text-align: end;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.timeline ul li .content_right h3 {
+    padding: 10px 20px;
+    margin-bottom: 0;
+    text-align: start;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.timeline ul li .content_left p {
+    padding: 10px 20px;
+    margin-top: 0;
+    text-align: end;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.timeline ul li .content_right p {
+    padding: 10px 20px;
+    margin-top: 0;
+    text-align: start;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.timeline ul li:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline ul li:nth-child(even) .date h4 {
+    float: right
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    left: 50%;
+    background-color: #474342;
 }
