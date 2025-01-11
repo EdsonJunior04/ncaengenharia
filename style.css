@@ -1,0 +1,101 @@
+/* Body */
+body{
+    background-color: #F7F2EF;
+}
+
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7vh;
+    background-color: #474342;
+}
+
+
+.img img{
+    width: 7.5vw;
+    height: 5.5vh;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #F7F2EF;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    color: #EC1F26;
+    text-decoration: underline;
+}
+
+.button_fale_conosco button{
+    color: #F7F2EF;
+    width: 7.5vw;
+    height: 4vh;
+    background-color: #EC1F26;
+    text-transform: capitalize;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Banner */
+.container_banner {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 100%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    z-index: 10;
+    padding: 10px;
+}
+
+.container_banner img {
+    width: 8vw; /* Ajuste o tamanho das imagens conforme necessário */
+    margin: 0 25px; /* Espaçamento entre as imagens */
+}
+
+/* Quem somos */
+.container_quemsomos{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #EC1F26;
+}
+
+.img_ceo img{
+    width: 10vw;
+    height: 10vh;
+}
+
+.descricao_quemsomos{
+    /* margin-left: 10%;    */
+}
