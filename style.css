@@ -61,7 +61,14 @@ header {
 }
 
 /* Banner */
-.container_banner {
+#slide-principal{
+  height: calc(100vh - 80px);
+
+}
+
+
+.swiper#slide-parceiros{
+  width: 1400px;
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -71,18 +78,33 @@ header {
   background-color: #ffffff;
   border-radius: 40px;
   z-index: 10;
-  padding: 10px;
+  padding: 10px;  
 }
 
-.container_banner img {
+.swiper#slide-parceiros .swiper-wrapper{
+  transition-timing-function: linear !important; 
+  position: relative;  
+}
+
+
+.swiper#slide-parceiros img {
   width: 8vw;
   margin: 0 25px;
+}
+
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide img{
+  width: 100%;
 }
 
 /* Quem somos */
 .container_quemsomos {
   max-width: 1400px;
-  margin: 10% auto;
+  margin: 10% auto 5%;
   display: flex;
   justify-content: center;
   align-items: center;

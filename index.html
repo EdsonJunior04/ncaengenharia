@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NCA Engenharia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -32,14 +33,38 @@
     <main>
         <!-- Banner -->
         <section style="position: relative;">
-            <img src="./assets/images/banner.png" alt="banner">
-            <div class="container_banner">
-                <img src="./assets/images/dimensao_engenharia.png" alt="dimensao_engenharia">
-                <img src="./assets/images/dimensao_engenharia.png" alt="dimensao_engenharia">
-                <img src="./assets/images/dimensao_engenharia.png" alt="dimensao_engenharia">
-                <img src="./assets/images/dimensao_engenharia.png" alt="dimensao_engenharia">
-                <img src="./assets/images/dimensao_engenharia.png" alt="dimensao_engenharia">
+            <div class="carrosel">
+                <!-- <img src="./assets/images/banner.png" alt="banner"> -->
+                <!-- Slider main container -->
+                <div class="swiper" id="slide-principal">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="./assets/images/123.jpg" alt="banner"></div>
+                        <div class="swiper-slide"> <img src="./assets/images/banner.png" alt="banner"></div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                </div>
+
             </div>
+
+            <div class="swiper" id="slide-parceiros">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./assets/images/dimensao_engenharia.png" alt="dimensao_engenharia"></div>
+                  <div class="swiper-slide"><img src="./assets/images/dimensao_engenharia.png" alt="dimensao_engenharia"></div>
+                  <div class="swiper-slide"><img src="./assets/images/dimensao_engenharia.png" alt="dimensao_engenharia"></div>
+                  <div class="swiper-slide"><img src="./assets/images/dimensao_engenharia.png" alt="dimensao_engenharia"></div>
+                  <div class="swiper-slide"><img src="./assets/images/dimensao_engenharia.png" alt="dimensao_engenharia"></div>
+                  <div class="swiper-slide"><img src="./assets/images/dimensao_engenharia.png" alt="dimensao_engenharia"></div>
+                  <div class="swiper-slide"><img src="./assets/images/dimensao_engenharia.png" alt="dimensao_engenharia"></div>
+                  <div class="swiper-slide"><img src="./assets/images/dimensao_engenharia.png" alt="dimensao_engenharia"></div>
+                </div>
+              </div>
+
+
         </section>
 
         <!-- Quem somos -->
@@ -152,21 +177,6 @@
             </div>
         </section>
 
-        <!-- Setviços -->
-
-        <section class="services">
-            <div>
-                <h1>Serviços</h1>
-                <img src="./assets/images/ImagemFundo.png" alt="background">
-            </div>
-            <div class="type_services">
-                <img src="./assets/images/servico1.png" alt="servico1"> 
-                <img src="./assets/images/servico2.png" alt="servico1">
-                <img src="./assets/images/servico1.png" alt="servico2">
-
-            </div>
-
-        </section>
 
 
 
@@ -176,6 +186,13 @@
     <footer>
 
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+
+
 </body>
 
 </html>
