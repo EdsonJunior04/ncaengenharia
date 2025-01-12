@@ -41,3 +41,19 @@ const swiper1 = new Swiper("#slide-parceiros", {
   disableOnInteraction: true
 });
 
+
+
+const swiper2 = new Swiper("#our-services", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
