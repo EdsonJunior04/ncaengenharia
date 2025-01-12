@@ -17,18 +17,17 @@ variable "nome_ec2" {
 variable "script_docker_nca" {
   default = <<EOF
 #!/bin/bash
-sudo apt-get update
-sudo apt-get install git 
-sudo install -m 0755 -d /etc/apt/keyrings
-sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
-sudo chmod a+r /etc/apt/keyrings/docker.asc
-# Add the repository to Apt sources:
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
-sudo usermod -a -G docker root
-sudo usermod -a -G docker ubuntu
-sudo docker pull edsonjunior04/ncaengenharia_develop:tagname
-sudo docker run -d --name=nca -p 80:80 edsonjunior04/ncaengenharia_develop:tagname
+# Instalar o NGINX
+apt update -y
+apt install -y nginx git
+
+# Clonar o repositório
+git clone -b develop https://github.com/EdsonJunior04/ncaengenharia.git /tmp/site
+
+# Mover os arquivos do repositório para o diretório do NGINX
+mv /tmp/site/* /var/www/html/
+
+# Reiniciar o NGINX
+systemctl restart nginx
 EOF
 }
