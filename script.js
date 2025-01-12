@@ -43,7 +43,7 @@ const swiper1 = new Swiper("#slide-parceiros", {
 
 
 
-const swiper2 = new Swiper("#our-services", {
+const swiper2 = new Swiper("#nossos-servicos", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
