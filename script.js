@@ -57,3 +57,14 @@ const swiper2 = new Swiper("#nossos-servicos", {
   },
 });
 
+
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  // Simula um envio ao backend
+  document.getElementById("responseMessage").innerHTML = `<div class="alert alert-success">Obrigado, ${name}! Sua mensagem foi enviada.</div>`;
+});

@@ -353,7 +353,7 @@ header {
 }
 
 
-.swiper#nossos-servicos{
+.swiper#nossos-servicos {
   width: 1400px;
   display: flex;
   justify-content: space-between;
@@ -368,18 +368,19 @@ header {
 
 /* Nossos Serviços */
 
-.parceiros h1{
+.parceiros h1 {
   text-align: center;
   margin: 40px;
   font-size: 40px;
   color: red;
 }
 
-.nossos_parceiros{
+.nossos_parceiros {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;;
+  gap: 20px;
+  ;
   flex-wrap: wrap;
 
 
@@ -390,3 +391,45 @@ header {
   width: 180px;
   height: 100px;
 }
+
+
+/* Fale Conosco */
+
+
+.fale_conosco {
+  position: relative;
+}
+
+.fale_conosco_formulario {
+  position: absolute;
+  width: 754px;
+  height: 664px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  left: 1100px;
+  top: 200px;
+
+}
+
+.fale_conosco_formulario h1 {
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 40px;
+  font-size: 50px;
+}
+
+.fale_conosco_formulario h2 {
+  font-size: 20px;
+  margin-left: 140px;
+  margin-right: 100px;
+  margin-bottom: 40px;
+}
+
+#contactForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: red;
+}
+
