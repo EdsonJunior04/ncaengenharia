@@ -398,38 +398,153 @@ header {
 
 .fale_conosco {
   position: relative;
-}
-
-.fale_conosco_formulario {
-  position: absolute;
-  width: 754px;
-  height: 664px;
-  border-radius: 15px;
-  background-color: #ffffff;
-  left: 1100px;
-  top: 200px;
-
-}
-
-.fale_conosco_formulario h1 {
-  left: 0;
-  right: 0;
-  text-align: center;
-  margin: 40px;
-  font-size: 50px;
-}
-
-.fale_conosco_formulario h2 {
-  font-size: 20px;
-  margin-left: 140px;
-  margin-right: 100px;
-  margin-bottom: 40px;
-}
-
-#contactForm {
   display: flex;
+  justify-content: end;
   align-items: center;
-  flex-direction: column;
-  background-color: red;
+  height: 100vh;
+  background: url(./assets/images/fale_conosco.png) no-repeat center center;
+  background-size: cover;
 }
 
+.contact-form {
+  position: absolute;
+  right: 90px;
+  /* margin-right: 90px; */
+  background-color: white;
+  padding: 38px 142px 97px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 754px;
+}
+
+.contact-form h2 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.contact-form p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  
+}
+
+textarea {
+  resize: none; /* Desativa o redimensionamento */
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #e60000;
+}
+
+/* footer */
+
+footer {
+  background-color: #3a3a3a;
+  color: #fff;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.container_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.logo {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.logo-section p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  display: inline-block;
+  font-size: 24px;
+  color: white;
+}
+
+
+
+
+.navigation h4 {
+  margin: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  
+}
+
+.navigation ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+.navigation ul {
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+
+}
+
+.address{
+  margin: 20px;
+
+}
+
+.address h4 {
+  margin-bottom: 35px;
+  text-align: center;
+
+}
+
+.icone-addres{
+  display: flex;
+  gap: 10px;
+}
+
+
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+  border-top: 1px solid #555;
+  padding-top: 10px;
+}

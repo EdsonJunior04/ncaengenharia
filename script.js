@@ -68,3 +68,5 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
   // Simula um envio ao backend
   document.getElementById("responseMessage").innerHTML = `<div class="alert alert-success">Obrigado, ${name}! Sua mensagem foi enviada.</div>`;
 });
+
+

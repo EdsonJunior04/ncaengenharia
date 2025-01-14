@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NCA Engenharia</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -235,37 +236,59 @@
         </section>
 
 
-        <!-- Parceiros -->
+        <!-- Fale conosco -->
 
         <section class="fale_conosco">
-            <div class="fale_conosco_formulario">
-                <h1>Fale Conosco</h1>
-                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id
-                    integer.</h2>
-                <form id="contactForm">
-                    <div class="mb-3">
-                        <label for="name" class="form-label"></label>
-                        <input type="text" class="form-control" id="name" placeholder="Seu nome" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label"></label>
-                        <input type="email" class="form-control" id="email" placeholder="Seu email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label"></label>
-                        <textarea class="form-control" id="message" rows="10" placeholder="Sua mensagem"
-                            required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+            <div class="contact-form">
+                <h2>Fale Conosco</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id
+                    integer.</p>
+                <form>
+                    <input type="email" placeholder="Seu email" required>
+                    <input type="text" placeholder="Assunto" required>
+                    <textarea placeholder="Mensagem..." rows="5" required></textarea>
+                    <button type="submit">Enviar E-mail</button>
                 </form>
-                <div id="responseMessage" class="mt-3"></div>
             </div>
-            <img src="./assets/images/fale_conosco.png" alt="fale-conosco">
         </section>
-
     </main>
 
     <footer>
+
+        <div class="container_footer">
+            <div class="logo-section">
+                <img src="./assets/images/logo.png" alt="NCA Logo" class="logo" />
+                <p>Improve efficiency, provide a better Customer experience with modern Technolo services available</p>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+            <div class="navigation">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">História</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Parceiros</a></li>
+                    <li><a href="#">intranet</a></li>
+                    <li><a href="#">Email</a></li>
+                </ul>
+            </div>
+            <div class="address">
+                <h4>Endereço</h4>
+                <div class="icone-addres">
+                    <span> <i class="bi bi-geo-alt-fill"></i></span>
+                    <p>Rua brisa mar nº47 A A, Brisa do Mar<br />São Luís – MA CEP: 65010-000</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © Copyright 2023 All rights reserved.
+        </div>
+
 
     </footer>
 
