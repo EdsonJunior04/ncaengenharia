@@ -22,7 +22,7 @@ const swiper = new Swiper('#slide-principal',{
     },
 
     autoplay: {
-      delay: 1000,
+      delay: 3000,
     },
 });
 
@@ -31,7 +31,7 @@ const swiper = new Swiper('#slide-principal',{
 const swiper1 = new Swiper("#slide-parceiros", {
   spaceBetween: 0,
   centeredSlides: true,
-  speed: 2500,
+  speed: 5500,
   autoplay: {
     delay: 1,
   },
