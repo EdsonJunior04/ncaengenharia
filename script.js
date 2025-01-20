@@ -69,4 +69,3 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
   document.getElementById("responseMessage").innerHTML = `<div class="alert alert-success">Obrigado, ${name}! Sua mensagem foi enviada.</div>`;
 });
 
-

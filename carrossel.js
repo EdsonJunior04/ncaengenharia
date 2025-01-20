@@ -1,14 +1,37 @@
-let currentIndex = 0;
+let currentIndex = 0; // Começa no primeiro slide real
+const carouselWrapper = document.querySelector('.carousel-wrapper');
+const items = document.querySelectorAll('.carousel-item');
+const totalItems = items.length;
 
+// Duplicar os itens para criar continuidade
+carouselWrapper.innerHTML += carouselWrapper.innerHTML;
+const updatedItems = document.querySelectorAll('.carousel-item');
+const updatedTotalItems = updatedItems.length;
+
+// Ajustar a largura do carrossel com base no total de itens
+carouselWrapper.style.width = `${(100 / 3) * updatedTotalItems}%`;
+
+// Mover o carrossel para o início com o índice correto
 function moveSlide(direction) {
-  const carouselWrapper = document.querySelector('.carousel-wrapper');
-  const items = document.querySelectorAll('.carousel-item');
-  const totalItems = items.length;
+  currentIndex += direction;
 
-  // Calcula o novo índice, com comportamento cíclico
-  currentIndex = (currentIndex + direction + totalItems) % totalItems;
-
-  // Aplica a transformação para mostrar os 3 cards corretos
-  const offset = -(currentIndex * (100 / 3)); // 100% da largura dividido por 3 cards visíveis
+  // Movimentação suave
+  carouselWrapper.style.transition = 'transform 0.5s ease-in-out';
+  const offset = -(currentIndex * (100 / 3));
   carouselWrapper.style.transform = `translateX(${offset}%)`;
+
+  // Verificar se atingiu os limites e ajustar sem transição
+  setTimeout(() => {
+    if (currentIndex < 0) {
+      currentIndex = totalItems - 1;
+      carouselWrapper.style.transition = 'none';
+      const resetOffset = -(currentIndex * (100 / 3));
+      carouselWrapper.style.transform = `translateX(${resetOffset}%)`;
+    } else if (currentIndex >= totalItems) {
+      currentIndex = 0;
+      carouselWrapper.style.transition = 'none';
+      const resetOffset = -(currentIndex * (100 / 3));
+      carouselWrapper.style.transform = `translateX(${resetOffset}%)`;
+    }
+  }, 500); // Igual ao tempo da transição
 }

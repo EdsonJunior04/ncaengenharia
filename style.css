@@ -131,7 +131,9 @@ header {
 
 }
 
-
+.ceo_empresa img{
+  height: 600px;
+} 
 
 .setor_beneficio {
   column-count: 2;
@@ -153,6 +155,10 @@ header {
   font-size: 50px;
   text-transform: capitalize;
   margin-bottom: 30px;
+}
+
+.informacao_proprietario h4{
+  font-style: italic;
 }
 
 
@@ -354,6 +360,7 @@ header {
   height: 80vh;
   display: block;
   filter: brightness(70%);
+  margin-bottom: 10%;
 }
 
 .services-title {
@@ -370,17 +377,24 @@ header {
 
 /* Custom Carousel */
 .custom-carousel {
-  position: relative;
+  position: absolute;
   overflow: hidden;
-  top: -350px;
+  top: 450px;
+  left: 50%;
   width: 80%;
-  margin: 0 auto;
-  z-index: 3;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+
+.services-content{
+  position: relative;
+  padding-bottom: 200px;
 }
 
 .carousel-wrapper {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  width: calc(33.33% * totalItems);
 }
 
 .carousel-item {
@@ -482,6 +496,7 @@ header {
   flex-direction: column; /* Coloca o título embaixo da imagem */
   justify-content: space-between;
 }
+
 
 
 
