@@ -7,6 +7,10 @@
     <title>NCA Engenharia</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -24,11 +28,11 @@
             <a href="#history">história</a>
             <a href="#services">serviços</a>
             <a href="#partners">parceiros</a>
-            <a href="#">trabalhe conosco</a>
+            <a href="#talk_to_us">trabalhe conosco</a>
         </div>
 
         <div class="button_fale_conosco">
-            <a href="">
+            <a href="#talk_to_us">
                 <button>fale conosco</button>
             </a>
         </div>
@@ -46,6 +50,8 @@
                         <!-- Slides -->
                         <div class="swiper-slide"><img src="./assets/images/123.jpg" alt="banner"></div>
                         <div class="swiper-slide"> <img src="./assets/images/banner.png" alt="banner"></div>
+                        <div class="swiper-slide"> <img src="./assets/images/building.jpg" alt="banner"></div>
+                        <div class="swiper-slide"> <img src="./assets/images/construction.jpg" alt="banner"></div>
                         ...
                     </div>
                     <!-- If we need pagination -->
@@ -83,7 +89,7 @@
 
         <!-- Quem somos -->
         <section>
-            <div class="container_quemsomos" id="home" >
+            <div class="container_quemsomos" id="home">
                 <div>
                     <img src="./assets/images/ceo.png" alt="CEO da empresa">
                 </div>
@@ -270,11 +276,6 @@
         </section>
 
 
-
-
-
-
-
         <!-- Parceiros -->
         <section class="parceiros" id="partners">
             <h1>Nossos Parceiros</h1>
@@ -293,31 +294,36 @@
                         alt="destaca"></a>
                 <a href="https://jfinvest.com.br/negocios/lhg-mining/" target="_blank"><img
                         src="./assets/images/jef.png" alt="J&F_mineracao"></a>
+                <a href="https://rumolog.com/" target="_blank"> <img src="./assets/images/rumo.png" alt="rumo"></a>
+                <a href="https://www.linkedin.com/company/dimens%C3%A3oengenharia/about/" target="_blank"><img
+                        src="./assets/images/dimensao_engenharia.png" alt="dimensao_engenharia"></a>
                 <img src="./assets/images/hidraltech.png" alt="dhidraltech">
                 <img src="./assets/images/petra.png" alt="petra">
-                <img src="./assets/images/dimensao_engenharia.png" alt="dimensao_engenharia">
                 <img src="./assets/images/minabras.png" alt="minabras">
                 <img src="./assets/images/lacerda.png" alt="lacerda">
-                <img src="./assets/images/rumo.png" alt="rumo">
             </div>
         </section>
 
 
         <!-- Fale conosco -->
 
-        <section class="fale_conosco">
-            <div class="contact-form">
+        <section class="fale_conosco" id="talk_to_us">
+            <div class="contact-form" id="forms_faleConosco">
                 <h2>Fale Conosco</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id
-                    integer.</p>
-                <form>
-                    <input type="email" placeholder="Seu email" required>
-                    <input type="text" placeholder="Assunto" required>
-                    <textarea placeholder="Mensagem..." rows="5" required></textarea>
+                <p>Estamos aqui para ajudar! Entre em contato conosco e teremos prazer em responder suas dúvidas ou ouvir suas sugestões."</p>
+                <form action="https://formsubmit.co/lucas.de.oliveira.rubia@gmail.com" method="POST">
+                    <input type="text" placeholder="Nome" name="name" required>
+                    <input type="text" placeholder="assunto" name="_subject" required>
+                    <input type="email" placeholder="Seu e-mail" name="email" required>
+                    <textarea name="message" placeholder="Mensagem..." rows="5" required></textarea>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
                     <button type="submit">Enviar E-mail</button>
                 </form>
             </div>
         </section>
+
+
     </main>
 
     <footer>
@@ -325,9 +331,11 @@
         <div class="container_footer">
             <div class="logo-section">
                 <img src="./assets/images/logo.png" alt="NCA Logo" class="logo" />
-                <p>Improve efficiency, provide a better Customer experience with modern Technolo services available</p>
+                <p>Gerenciar, construir e desenvolver projetos para contribuição de um
+                    mundo melhor.</p>
+                <p>Siga-nos em nossas redes sociais</p>
                 <div class="social-icons">
-                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://wa.me/559830225118" target="_blank"><i class="bi bi-whatsapp"></i></a>
                     <a href="https://www.instagram.com/nca.engenharia?igsh=M29xOXljZzl2MGRw" target="_blank"><i
                             class="bi bi-instagram"></i></a>
                     <a href="https://www.linkedin.com/company/nca-engenharia/" target="_blank"><i
@@ -342,7 +350,7 @@
                     <li><a href="#history">História</a></li>
                     <li><a href="#services">Serviços</a></li>
                     <li><a href="#partners">Parceiros</a></li>
-                    <li><a href="#">intranet</a></li>
+                    <li><a href="https://auth.hostinger.com/br/login" target="_blank">intranet</a></li>
                     <li><a href="#">Email</a></li>
                 </ul>
             </div>

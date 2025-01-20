@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'timeBurner'; /* Nome da fonte */
+  src: url('assets/fonts/timeburner_regular.ttf') format('truetype'); /* Caminho para o arquivo */
+}
+
+
 /* Body */
 body {
   background-color: #f7f2ef;
@@ -42,11 +48,14 @@ header {
   color: #f7f2ef;
   text-transform: capitalize;
   font-weight: bold;
+  font-family: timeBurner, sans-serif;
+
 }
 
 .menu a:hover {
-  color: #ec1f26;
-  text-decoration: underline;
+  text-decoration: underline #ec1f26;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 10px;
 }
 
 .button_fale_conosco button {
@@ -79,6 +88,7 @@ header {
   border-radius: 40px;
   z-index: 10;
   padding: 10px;
+  border: #474342 1px solid;
 }
 
 .swiper#slide-parceiros .swiper-wrapper {
@@ -87,9 +97,11 @@ header {
 }
 
 .swiper#slide-parceiros .swiper-wrapper img {
-  width: 180px;
+  padding: 10px;
+  width: 140px;
   height: 100px;
 }
+
 
 
 .swiper#slide-parceiros img {
@@ -106,6 +118,7 @@ header {
   width: 100%;
 }
 
+
 /* Quem somos */
 .container_quemsomos {
   max-width: 1400px;
@@ -114,6 +127,8 @@ header {
   display: flex;
   justify-items: center;
   align-items: center;
+  font-family: "Montserrat", serif;
+
 }
 
 
@@ -129,6 +144,7 @@ header {
   gap: 50px;
   justify-content: space-between;
   flex-direction: column;
+  
   /* background-color: red; */
 }
 
@@ -145,6 +161,8 @@ header {
 /* Nossa historia */
 .content {
   padding: 20px 0;
+  font-family: "Montserrat", serif;
+
   /* background-color: blue; */
 }
 
@@ -189,6 +207,13 @@ header {
   font-size: 30px;
 }
 
+.timeline h3:hover {
+  text-decoration: underline #ec1f26;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 10px;
+}
+
+
 .timeline ul li {
   margin-bottom: 50px;
   list-style-type: none;
@@ -219,42 +244,6 @@ header {
   left: 11px;
 }
 
-@media (max-width: 800px) {
-  .point {
-    min-width: 15px;
-    height: 15px;
-  }
-
-  html,
-  body {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 650px) {
-
-  html,
-  body {
-    font-size: 14px;
-  }
-
-  .point {
-    min-width: 12px;
-    height: 12px;
-  }
-}
-
-@media (max-width: 450px) {
-
-  html,
-  body {
-    font-size: 10px;
-  }
-
-  p {
-    padding: 10px !important;
-  }
-}
 
 .timeline ul li .content_left {
   width: 50%;
@@ -520,7 +509,7 @@ header {
 
 
 
-/* Nossos Serviços */
+/* Nossos Parceiros */
 
 .parceiros h1 {
   text-align: center;
@@ -542,8 +531,8 @@ header {
 
 .nossos_parceiros img {
   margin: 40px;
-  width: 100px;
-  height: 100px;
+  max-width: 130px;
+  max-height: 130px;
 }
 
 
@@ -558,6 +547,8 @@ header {
   height: 100vh;
   background: url(./assets/images/fale_conosco.png) no-repeat center center;
   background-size: cover;
+  font-family: "Montserrat", serif;
+
 }
 
 .contact-form {
@@ -595,7 +586,7 @@ header {
 }
 
 textarea {
-  resize: none;
+  resize: none !important;
   /* Desativa o redimensionamento */
 }
 
@@ -621,13 +612,14 @@ footer {
   background-color: #3a3a3a;
   color: #fff;
   padding: 20px 0;
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", serif;
+
 }
 
 .container_footer {
   display: flex;
   justify-content: space-between;
-  gap: 80px;
+  gap: 70px;
   align-items: flex-start;
   max-width: 1450px;
   margin: 0 auto;
