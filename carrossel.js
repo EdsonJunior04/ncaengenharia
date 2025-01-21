@@ -9,7 +9,7 @@ const updatedItems = document.querySelectorAll('.carousel-item');
 const updatedTotalItems = updatedItems.length;
 
 // Ajustar a largura do carrossel com base no total de itens
-carouselWrapper.style.width = `${(100 / 3) * updatedTotalItems}%`;
+carouselWrapper.style.width = `${carouselItems.length * 33.33}%`; // Ajusta a largura
 
 // Mover o carrossel para o início com o índice correto
 function moveSlide(direction) {
@@ -35,3 +35,4 @@ function moveSlide(direction) {
     }
   }, 500); // Igual ao tempo da transição
 }
+

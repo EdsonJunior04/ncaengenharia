@@ -394,7 +394,7 @@ header {
 .carousel-wrapper {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: calc(33.33% * totalItems);
+  width: 100%;
 }
 
 .carousel-item {
@@ -411,6 +411,10 @@ header {
   height: auto;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
+  max-width: 400px;
+  max-height: 400px;
+  min-width: 400px;
+  min-height: 400px;
 }
 
 .card:hover {
@@ -422,6 +426,10 @@ header {
   height: 100%;
   object-fit: cover;
   transition: filter 0.3s;
+  max-width: 400px;
+  max-height: 400px;
+  min-width: 400px;
+  min-height: 400px;
 }
 
 .card-hover {
@@ -451,10 +459,12 @@ header {
 }
 
 /* Carousel Controls */
+/* Carousel Controls */
 .carousel-control {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 10px; /* Ajusta a posição para o final */
+  left: auto;
+  right: auto;
   background-color: #ffffff;
   color: white;
   border: none;
@@ -463,19 +473,22 @@ header {
   font-size: 22px;
   z-index: 4;
   border-radius: 5px;
+  transform: translateY(-175%); /* Remove o ajuste central */
 }
 
+/* Posicionamento para as setas individuais */
 .carousel-control.prev {
-  left: 0px;
+  left: 7%; /* Ajuste para a esquerda */
 }
 
 .carousel-control.next {
-  right: 0px;
+  right: 11%; /* Ajuste para a direita */
 }
 
 .carousel-control:hover {
   background-color: #f7f2ef;
 }
+
 
 /* Card Title (Texto abaixo da imagem) */
 .card-title {
